@@ -15,6 +15,8 @@
 		86C7CCEA24B834A900F917BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C7CCE924B834A900F917BF /* Preview Assets.xcassets */; };
 		86C7CCED24B834A900F917BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C7CCEB24B834A900F917BF /* LaunchScreen.storyboard */; };
 		86C7CCF524B8356D00F917BF /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7CCF424B8356D00F917BF /* AddBookView.swift */; };
+		86C7CCF724B83BCB00F917BF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7CCF624B83BCB00F917BF /* RatingView.swift */; };
+		86C7CCF924B83F2700F917BF /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7CCF824B83F2700F917BF /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		86C7CCEC24B834A900F917BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C7CCEE24B834A900F917BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86C7CCF424B8356D00F917BF /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		86C7CCF624B83BCB00F917BF /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		86C7CCF824B83F2700F917BF /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,9 @@
 				86C7CCDD24B834A400F917BF /* AppDelegate.swift */,
 				86C7CCDF24B834A400F917BF /* SceneDelegate.swift */,
 				86C7CCE424B834A400F917BF /* ContentView.swift */,
+				86C7CCF824B83F2700F917BF /* EmojiRatingView.swift */,
 				86C7CCF424B8356D00F917BF /* AddBookView.swift */,
+				86C7CCF624B83BCB00F917BF /* RatingView.swift */,
 				86C7CCE624B834A900F917BF /* Assets.xcassets */,
 				86C7CCEB24B834A900F917BF /* LaunchScreen.storyboard */,
 				86C7CCEE24B834A900F917BF /* Info.plist */,
@@ -154,7 +160,9 @@
 			files = (
 				86C7CCDE24B834A400F917BF /* AppDelegate.swift in Sources */,
 				86C7CCE324B834A400F917BF /* Bookworm.xcdatamodeld in Sources */,
+				86C7CCF924B83F2700F917BF /* EmojiRatingView.swift in Sources */,
 				86C7CCE524B834A400F917BF /* ContentView.swift in Sources */,
+				86C7CCF724B83BCB00F917BF /* RatingView.swift in Sources */,
 				86C7CCE024B834A400F917BF /* SceneDelegate.swift in Sources */,
 				86C7CCF524B8356D00F917BF /* AddBookView.swift in Sources */,
 			);
