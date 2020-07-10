@@ -27,6 +27,7 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(book.title ?? "Unknown Title")
                                 .font(.headline)
+                                .foregroundColor(self.redFont(rating: book.rating))
                             Text(book.author ?? "Unknown Author")
                                 .foregroundColor(.secondary)
                         }
@@ -46,6 +47,9 @@ struct ContentView: View {
         }
     }
 
+    func redFont(rating: Int16) -> Color{
+        return rating == 1 ? Color.red : Color.primary
+    }
     func deleteBooks(at offsets: IndexSet) {
         for offset in offsets {
             // find this book in our fetch request
