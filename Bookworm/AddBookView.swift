@@ -12,6 +12,8 @@ struct AddBookView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var presentationMode
 
+    @State var alertShowing = false
+
     //MARK: State variables for Book
     @State private var title = ""
     @State private var genre = ""
@@ -39,6 +41,10 @@ struct AddBookView: View {
                 }
                 Section {
                            Button("Save") {
+                            if self.genre == "" {
+                                self.alertShowing = true
+                                return
+                            }
                                let newBook = Book(context: self.moc)
                                newBook.title = self.title
                                newBook.author = self.author
@@ -50,6 +56,10 @@ struct AddBookView: View {
                             self.presentationMode.wrappedValue.dismiss()
                            }
                 }
+            }
+        .alert(isPresented: $alertShowing) {
+            Alert(title: Text("Genre Missing"), message: Text("Please choose a genre"), dismissButton: .cancel()
+        )
             }
             .navigationBarTitle("Add Book")
         }
